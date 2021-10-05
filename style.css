@@ -1,0 +1,123 @@
+body { 
+	background-color:#F3F1F5 ;
+	color: black ;
+	font-family: Garamond;
+	font-size: 20px;
+}
+h1,h2 { 
+	font-family: Helvetica;
+}
+h1 {
+	color: #F8844B;
+	letter-spacing: 10px;
+	font-size: 32px;
+}
+h2 {
+	color: #F8844B;
+	font-size: 24px;
+	font-weight: lighter;
+}
+a {
+	text-decoration: none;
+	color: #FAF6F6;
+}
+a:hover {
+	color: #303F3C;
+}
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+@media (max-width: 760px){
+	.container {
+	width: 600px;
+	}
+	.list-inline {
+		width: 600px;
+	}
+}
+@media (max-width: 500px){
+	.container {
+	width: 400px;
+	}
+}
+.card-white {
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	margin: 20px 0px;
+	text-align: center;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.btn-orange {
+	background-color: #F8844B;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+}
+.btn-orange:hover {
+	background-color: #FFC898;
+	color: white;
+}
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+.list-inline i {
+	font-size: 50px;
+	color: #F8844B ;
+}
+.list-inline i:hover {
+	color: #FFC898;
+}
+
+#introduction p {
+	margin-bottom:  40px;
+}
+{ 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: white;
+}
+#caroussel { 
+	width: 700px;
+	overflow: auto;
+	border-radius: 6px;
+}
+.images {
+	display: flex;
+	animation-duration: 10s;
+	animation-name: mesImages;
+	animation-iteration-count: infinite;
+}
+@keyframes mesImages {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-230px);
+	}
+	50% {
+		transform: translateX(-460px);
+	}	
+	75% { 
+		transform: translateX(-680px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+
+
+
+
+
+
